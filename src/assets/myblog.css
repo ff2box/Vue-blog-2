@@ -1,0 +1,251 @@
+.index .row .slide {
+    margin-bottom: 35px;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 1000
+}
+
+.index .row .slide img {
+    width: 100%;
+    height: 270px;
+    background-color: hsla(0, 0%, 71%, .2)
+}
+
+/*
+页面居中设置：
+父：
+text-align: center;
+子：
+margin-right: auto;
+    margin-left: auto;
+*/
+
+.main {
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 35px;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 1000;
+    min-width: 960px;
+    width: 55%;
+    /*background-color: hsla(0, 0%, 71%, .2);*/
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*=========================header=========================*/
+a.team {
+    /*a:link {*/
+    /*color: #FF0000;*/
+    /*text-decoration: none;*/
+    /*}		!* 未访问的链接 *!*/
+    /*a:visited {color: #00FF00}	!* 已访问的链接 *!*/
+    /*a:hover {color: #FF00FF}	!* 鼠标移动到链接上 *!*/
+    /*a:active {color: #0000FF}	!* 选定的链接 *!*/
+
+    /*p:hover {color: #FF00FF}	!* 鼠标移动到链接上 *!*/
+    /*p:active {color: #0000FF}	!* 选定的链接 *!*/
+}
+
+/*=========================轮播图=========================*/
+.banner {
+    display: inline-block;
+}
+
+.banner a > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    /*right: auto;*/
+    /*left: 0;*/
+    background-image: none;
+    /*background-repeat: repeat-x;*/
+}
+
+/*=========================blog列表=========================*/
+.have-img {
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.have-img .content {
+    float: left;
+    padding-left: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.have-img a > img {
+    height: 100px;
+    width: 125px;
+    border-radius: 6px;
+    float: right;
+    margin-right: 15px;
+}
+
+div.content > a {
+    color: rgba(22, 22, 22, 1);
+    font-size: 18px;
+}
+
+div.content > p {
+    color: rgba(44, 44, 44, 0.9);
+    font-size: 13px;
+}
+
+a.nickname {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+}
+
+a.comment, div.content > div > span {
+    color: darkgray;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.carousel-inner div {
+    border-radius: 6px;
+}
+
+hr {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    /*border: 1px;*/
+    border-color: darkgray;
+}
+
+/*=========================user列表=========================*/
+a.avatar > img {
+    height: 48px;
+    width: 48px;
+    /*border: 1px solid gainsboro;*/
+    border-radius: 50%;
+    float: left;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+ul > li > p {
+    color: darkgray;
+    font-size: 12px;
+}
+
+.follow {
+    color: green;
+    font-size: 12px;
+    float: right;
+}
+
+ul > li > a.name {
+    color: rgba(22, 22, 22, 1);
+    font-size: 14px;
+}
+
+ul > li {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    margin-top: 20px;
+}
+
+ul {
+    align-content: center;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+ul > hr {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+    border-color: gray;
+}
+
+/*=========================sign=========================*/
+.sign {
+    text-align: center;
+    margin-top: 6em;
+    margin-bottom: 35px;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 1000;
+    min-width: 480px;
+    width: 30%;
+    background-color: hsla(0, 0%, 71%, .2);
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.tab-pane {
+    margin-top: 40px;
+}
+
+.modalIndex {
+    z-index: 9999;
+    /*position: absolute;*/
+    /*position: relative;*/
+    /*display: inline;*/
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*=========================sign=========================*/
+.question-content {
+    color: #2b2b2b;
+    text-align: left;
+    word-wrap: break-word;
+    word-break: normal;
+    line-height: 150%;
+    padding-bottom: 10px;
+}
+
+/*p {*/
+/*text-align: justify;*/
+/*word-wrap: break-word;*/
+/*word-break: normal;*/
+/*}*/
+
+/*img {*/
+/*display: block;*/
+/*max-width: 45%;*/
+/*max-height: 100px;*/
+/*padding: 3px 0;*/
+/*margin-left: 0;*/
+/*}*/
+
+.question-content-absText p:last-child::after {
+    content: "......";
+    color: #1e90ff;
+}
+
+/*会导致页面闪动*/
+/*pre:focus,*/
+/*pre:hover {*/
+    /*width: min-content;*/
+/*}*/
+
+pre {
+    /*传说的缩进？*/
+    text-indent:135px;
+    /*字间距*/
+    letter-spacing : 2px;
+    overflow-x: auto;
+    /*行间距*/
+    line-height: 25px;
+    border-color: rgba(0, 0, 0, 0);
+    /*tab宽度*/
+    tab-width: 2;
+    /*最重要的*/
+    white-space: pre-wrap; /*css-3*/
+    white-space: -moz-pre-wrap; /*Mozilla,since1999*/
+    /*white-space: -pre-wrap; !*Opera4-6*!*/
+    white-space: -o-pre-wrap; /*Opera7*/
+    word-wrap: break-word; /*InternetExplorer5.5+*/
+}
