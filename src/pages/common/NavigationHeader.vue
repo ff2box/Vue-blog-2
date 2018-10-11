@@ -47,12 +47,12 @@
                     <button type="button" class="btn btn-default">注册</button>
                 </a>
             </li>
-            <li v-if="user != null" class="nav-dropdown-container learn">
+            <li @click="handleNavigation(3)" v-if="user != null" class="nav-dropdown-container learn">
                 <a class="nav-link">{{user}}</a><span class="arrow"></span>
                 <ul class="nav-dropdown">
                     <li>
                         <ul>
-                            <li @click="goToMyPage" ><router-link to="" class="nav-link current">我的主页</router-link></li>
+                            <li @click="handleNavigation(3)" ><router-link to="" class="nav-link current">我的主页</router-link></li>
                             <li><a href="/v2/api/" class="nav-link">收藏的文章</a></li>
                             <li><a href="/v2/style-guide/" class="nav-link">喜欢的文章</a></li>
                             <li style="display: none;"><a href="/v2/examples/" class="nav-link">已购内容</a></li>
@@ -121,7 +121,7 @@
                         this.$router.push('/register?sign=' + index);
                         break;
                     case 3: //个人主页
-                        // this.$router.push('/');
+                        this.$router.push('/my');
                         break;
                     case 4: //写文章
                         this.$router.push('/write');
@@ -139,9 +139,9 @@
                 this.removeToken();
                 this.$router.push('/');
             },
-            goToMyPage() {
-                this.$router.push('/my');
-            }
+            // goToMyPage() {
+            //     this.$router.push('/my');
+            // }
         },
         computed: {
             ...mapActions(["setUser"]),

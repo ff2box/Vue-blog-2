@@ -64,7 +64,7 @@
             ...mapGetters(['getToken', 'getUser']),
             loadMoreBlog() {
                 this.loadMoreDisplay = 'hidden';
-                console.log(this.blogPage);
+                // console.log(this.blogPage);
                 axios.get("/index/blog?page=" + this.blogPage).then(res => {
                     console.log(res.data);
                     switch (res.data.code) {
@@ -127,7 +127,7 @@
             axios.get("/index").then(res => {
                 this.loadMoreDisplay = 'visible';
                 this.loadMoreUserDisplay = 'visible';
-                // console.log(res.data);
+                console.log(res.data);
                 switch (res.data.code) {
                     case 0:
                         this.blogs = res.data.data.blogs;

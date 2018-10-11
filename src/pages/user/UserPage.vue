@@ -8,7 +8,7 @@
                 <blog-item :data="myBlogs"></blog-item>
             </div>
             <div class="col-xs-4">
-                <h4 style="margin-top: 30px;font-weight: bold">我的关注</h4>
+                <h4 style="margin-top: 30px;font-weight: bold">{{myAttention}}</h4>
                 <!--右侧的推荐用户列表-->
                 <user-item style="margin-top: 30px" :userDetails="myFriends"></user-item>
             </div>
@@ -39,6 +39,7 @@
                 myBlogs: [],
                 myFriends: [],
                 myDetail: [],
+                myAttention: '暂无关注',
             }
         },
         methods: {
@@ -61,7 +62,7 @@
                 blogTitle: this.blogTitle,
                 blogContent: this.blogContent
             }).then(res => {
-                console.log(res);
+                // console.log(res);
                 if (res.status === 200) {
                     //成功
                 }
@@ -69,6 +70,9 @@
                     case 0:
                         this.myBlogs = res.data.data.myBlogs;
                         this.myFriends = res.data.data.myFriends.attentions;
+                        if (this.myFriends.length !== 0) {
+                            this.myAttention = "我的关注";
+                        }
                         this.myDetail.push(res.data.data.myDetail);
 
                         this.$refs.myItem.getMyDetail({
