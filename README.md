@@ -107,15 +107,15 @@ module.exports = {
 
 首页：
 
-![image](https://github.com/Pologinfeejz/node-blog/mongodb_aggregate.jpg)
+![image](https://github.com/Pologinfeejz/Vue-blog/blob/master/src/pageimages/index.jpg)
 
 登录/注册：
 
-![image](https://github.com/Pologinfeejz/node-blog/mongodb_aggregate.jpg)
+![image](https://github.com/Pologinfeejz/Vue-blog/blob/master/src/pageimages/login.jpg)
 
 评论内容：
 
-![image](https://github.com/Pologinfeejz/node-blog/mongodb_aggregate.jpg)
+![image](https://github.com/Pologinfeejz/Vue-blog/blob/master/src/pageimages/comments.jpg)
 
 ### 要点介绍
 
