@@ -8,7 +8,7 @@ import axios from '../config/axios'
 
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
+/* -disable no-new */
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import '@/assets/cn_vuejs_org.css'
@@ -17,7 +17,9 @@ import 'ant-design-vue/dist/antd.css'
 import Antd from 'ant-design-vue'
 
 Vue.use(Antd);
-
+/*
+启动的命令：npm run dev
+ */
 new Vue({
     el: '#app',
     router,
