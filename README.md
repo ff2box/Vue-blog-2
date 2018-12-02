@@ -1,4 +1,4 @@
-# **个人博客后端项目**
+# **个人博客前端项目**
 
 该项目为“个人博客项目”前后端分离后的前端，webstorm+ES6+vue+git+yarn进行开发。同样的，从产品、UI和开发，都由个人完成，其中参考了“简书”的页面设计。
 
@@ -105,15 +105,15 @@ module.exports = {
 
 #### 页面效果展示
 
-首页：
+> 首页：
 
 ![image](https://github.com/Pologinfeejz/Vue-blog/blob/master/src/pageimages/index.jpg)
 
-登录/注册：
+> 登录/注册：
 
 ![image](https://github.com/Pologinfeejz/Vue-blog/blob/master/src/pageimages/login.jpg)
 
-评论内容：
+> 评论内容：
 
 ![image](https://github.com/Pologinfeejz/Vue-blog/blob/master/src/pageimages/comments.jpg)
 
